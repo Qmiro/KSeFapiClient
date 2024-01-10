@@ -5,7 +5,8 @@ Krajowy Systemu e-Faktur
 * Wersja projektu 1.0.0
 * Wymagana wersja PHP >= 7.0.0
 * Baza danych MySQL
-* Do tworzeniu dokumentów XML Projekt używa funkcji xmlwriter. 
+* Do tworzeniu dokumentów XML Projekt używa funkcji xmlwriter.
+* Do walidacji poprawnie utworzonego dokumentów XML Projekt używa DOMDocument.
 
 Celem projektu jest stworzenie klienta API KSeF w technologi PHP, z wykorzystaniem wywołań http i serializacji JSON. Obecna wersja klienta wspierwa wyłącznie scheme FA (2)
 
@@ -28,4 +29,4 @@ Aktualna wersja projektu pozwala na następujące działania:
 * Sprawdzenie statusu procesowania faktury w repozytorium KSeF
 * Pobranie jednej lub wielu faktur z repozytorium KSeF
 
-Wszystkie procesy odbywają się w sesji interaktywnej. Wymagany jest token autoryzacyjny dodany w panelu KSeF.  
+Wszystkie procesy odbywają się w sesji interaktywnej. Wymagany jest token autoryzacyjny dodany w panelu KSeF. 
