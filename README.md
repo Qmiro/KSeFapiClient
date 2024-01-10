@@ -23,10 +23,10 @@ W bazie danych będziesz potrzebować następujących tabel
 
 Aktualna wersja projektu pozwala na następujące działania:
 
-* Tworzenie dokumentu faktury w formie pliku XML zgodnie ze schemą KSeF FA (2)
+* Tworzenie dokumentu faktury w formie pliku XML zgodnie ze schemą KSeF FA (2). Obsługiwane dokumenty faktur: zakupowa, sprzedaży oraz krekty
 * Walidacja struktury faktury pod kątem synematycznym
 * Wysłanie faktury do repozytorium KSeF
 * Sprawdzenie statusu procesowania faktury w repozytorium KSeF
 * Pobranie jednej lub wielu faktur z repozytorium KSeF
 
-Wszystkie procesy odbywają się w sesji interaktywnej. Wymagany jest token autoryzacyjny dodany w panelu KSeF. 
+Wszystkie procesy odbywają się w sesji interaktywnej. Wymagany jest token autoryzacyjny dodany w panelu KSeF.  
