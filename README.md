@@ -8,6 +8,7 @@ W bazie danych będziesz potrzebować następujących tabel:s:
 
 | tabela   	       | opis   	                                                           |
 |-----------------|---------------------------------------------------------------------------|
-| `ksef_api_communication_errors` 	     | 	data about companies you will authorize to access KSeF                   | 
-| `integrations`	 | 	records about integration status and UUID of the company in A-Cube PL API |
-| `invoices`	     | 	synchronized invoices from KSeF  
+| `ksef_api_communication_errors` 	     | 	logowanie błędów procesów zadrzeń  wykonywanych w repozytorium KSeF z wykorzystaniem procesów API                  | 
+| `ksef_api_contracts`	 | 	dane dostępu do API KSeF |
+| `ksef_invoices`	     | 	wysłane / pobrane faktury z repozytorium KSeF                                          |
+| `ksef_invoice_processing`	     | 	procesy wysyłania faktur do repozytorium KSeF       
