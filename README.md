@@ -34,3 +34,51 @@ Wszystkie procesy odbywają się w sesji interaktywnej. Wymagany jest token auto
 
 Użycie aplikacji - wysłanie faktury do repozytorium KSeF
 
+```php
+
+<?php
+
+declare(strict_types = 1);
+use Application\Validator\KwValidator;
+
+include __DIR__ . '/vendor/autoload.php';
+
+$kaNumber = 'WA1P/122758/6';
+
+$validator = new KwValidator();
+if ($validator->isValid($kwNunumber) !== false) {
+    echo 'Podany numer księgi wieczystej jest prawidłowy!';
+} else {
+    echo 'Podany numer księgi wieczystej jest nie prawidłowy!<br/>';
+    $messages = $validator->getMessages();
+    foreach ($messages as $key => $value) {
+        echo $key . ' => ' . $value . '<br/>';
+    }
+}
+```
+Użycie walidatora dla pełneo mumeru
+
+```php
+<?php
+
+declare(strict_types = 1);
+
+chdir(dirname(__DIR__));
+chdir(__DIR__);
+define('BASE_PATH', realpath(__DIR__));
+
+include 'KSeFcommand.php';
+
+objKSeFcommand = new KSeFcommand();
+
+$objKSeFcommand->addConnectionDb($db);
+$objKSeFcommand->addBasePath(BASE_PATH);
+
+$typApi - mooże przyjąć jedną z trzech wartości:
+* test - Tryb testowy api KSeF korzysta z adresu https://ksef-test.mf.gov.pl/
+* demo - Tryb demo api KSeF korzysta z adresu https://ksef-demo.mf.gov.pl/
+* public -Tryb produkcyjny api KSeF korzysta z adresu https://ksef.mf.gov.pl/
+
+$objKSeFcommand->connectionApi($nip, $token, $typApi);
+```
+
