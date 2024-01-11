@@ -32,9 +32,7 @@ Aktualna wersja projektu pozwala na następujące działania:
 
 Wszystkie procesy odbywają się w sesji interaktywnej. Wymagany jest token autoryzacyjny dodany w panelu KSeF.  
 
-Użycie aplikacji - wysłanie faktury do repozytorium KSeF
-
-Użycie walidatora dla pełneo mumeru
+Użycie aplikacji - praca z fakturami
 
 $typApi - mooże przyjąć jedną z trzech wartości:
 * test - Tryb testowy api KSeF korzysta z adresu https://ksef-test.mf.gov.pl/
@@ -77,6 +75,27 @@ object(stdClass)#5 (5) {
   ["processingDescription"] => string(30) "Proces został zarejestrowany."
   ["elementReferenceNumber"] => string(36) ""
 }
+
+// Sprawdzenie faktury za pomocą elementReferenceNumber zwróconym po wysłaniu
+// faktury do repozytorium KSeF
+
+$checkInvoiceStatus = $objKSeFcommand->checkInvoiceStatus($elementReferenceNumber);
+
+object(stdClass)#5 (6) {
+  ["timestamp"] => string(24) ""
+  ["referenceNumber"] => string(36) ""
+  ["processingCode"] => int(200)
+  ["processingDescription"] => string(46) "Zakończenie etapu archiwizacji danych faktury"
+  ["elementReferenceNumber"] => string(36) ""
+  ["invoiceStatus"]=>
+    object(stdClass)#4 (3) {
+      ["invoiceNumber"] => string(13) ""
+      ["ksefReferenceNumber"] => string(35) ""
+      ["acquisitionTimestamp"] => string(24) ""
+    }
+  }
+
+// Po wykonaniu procesu zostanie dodany wpis wartości ksefReferenceNumber do bazy danycc
 
 ```
 
