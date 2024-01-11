@@ -66,5 +66,17 @@ $objKSeFcommand->addBasePath(BASE_PATH);
 $objKSeFcommand->connectionApi($nip, $token, $typApi);
 $xml = 'twojafaktura.xml';
 $sendInvoice = $objKSeFcommand->sendInvoice($xml);
+
+// Po wykonanym procesie zostanie zwrócony object, na podstawie zwróconych danyhc w bazie apliakcji zostaną zapisane dwie wartości referenceNumber,elementReferenceNumber.
+// Na podstawie elementReferenceNumber sprawdzany będzie status faktury w repozytorium KSeF
+
+object(stdClass)#5 (5) {
+  ["timestamp"] => string(24) ""
+  ["referenceNumber"] => string(36) ""
+  ["processingCode"] => int(100)
+  ["processingDescription"] => string(30) "Proces został zarejestrowany."
+  ["elementReferenceNumber"] => string(36) ""
+}
+
 ```
 
