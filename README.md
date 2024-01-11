@@ -28,5 +28,6 @@ Aktualna wersja projektu pozwala na następujące działania:
 * Wysłanie faktury do repozytorium KSeF
 * Sprawdzenie statusu procesowania faktury w repozytorium KSeF
 * Pobranie jednej lub wielu faktur z repozytorium KSeF
+* Pobranie UPO faktur z repozytorium KSeF
 
 Wszystkie procesy odbywają się w sesji interaktywnej. Wymagany jest token autoryzacyjny dodany w panelu KSeF.  
