@@ -31,3 +31,6 @@ Aktualna wersja projektu pozwala na następujące działania:
 * Pobranie UPO faktur z repozytorium KSeF
 
 Wszystkie procesy odbywają się w sesji interaktywnej. Wymagany jest token autoryzacyjny dodany w panelu KSeF.  
+
+Użycie aplikacji - wysłanie faktury do repozytorium KSeF
+
