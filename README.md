@@ -41,9 +41,9 @@ $typApi - mooże przyjąć jedną z trzech wartości:
 * demo - Tryb demo api KSeF korzysta z adresu https://ksef-demo.mf.gov.pl/
 * public -Tryb produkcyjny api KSeF korzysta z adresu https://ksef.mf.gov.pl/
 
-$db - połączenie z bazą danych w wersji podstawowej aplikacji (v.1.0.0) wykorzystywane jest zwykłe połączenie z użyciem roższerzenia PDO, które powinno być zainstalowane na twoim serwerze
-$nip - numer NIP, który by zakłądany na stronie KSeF
-$token - token autoryzacyjny, który był zakładany na stronie KSeF musi być on powiązany z podawanym numerem NIP (muszą mu być nadane zapis/odczytu faktur.
+* $db - połączenie z bazą danych w wersji podstawowej aplikacji (v.1.0.0) wykorzystywane jest zwykłe połączenie z użyciem roższerzenia PDO, które powinno być zainstalowane na twoim serwerze
+* $nip - numer NIP, który by zakłądany na stronie KSeF
+* $token - token autoryzacyjny, który był zakładany na stronie KSeF musi być on powiązany z podawanym numerem NIP (muszą mu być nadane zapis/odczytu faktur.
 
 ```php
 <?php
