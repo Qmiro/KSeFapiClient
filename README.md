@@ -78,7 +78,7 @@ object(stdClass)#5 (5) {
 
 // Sprawdzenie faktury za pomocą elementReferenceNumber zwróconym po wysłaniu
 // faktury do repozytorium KSeF
-// Po wykonaniu procesu zostanie dodany wpis wartości ksefReferenceNumber do bazy danycc
+// Po wykonaniu procesu zostanie dodany wpis wartości ksefReferenceNumber do bazy danych
 
 $checkInvoiceStatus = $objKSeFcommand->checkInvoiceStatus($elementReferenceNumber);
 
@@ -96,7 +96,7 @@ object(stdClass)#5 (6) {
     }
   }
 
-// Fakture jej tresc pobieramy za pomocą numeru ksefReferenceNumber. Po prawidłowym wykoanaiu procesu zostanie zwrócona struktura XML faktury
+// Fakture jej treść pobieramy za pomocą numeru ksefReferenceNumber. Po prawidłowym wykonaniu procesu zostanie zwrócona struktura XML faktury
 
 $xmlInvoice = $objKSeFcommand->getInvoice($kSeFReferenceNumber);
 
