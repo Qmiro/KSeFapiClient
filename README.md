@@ -65,7 +65,7 @@ $objKSeFcommand->connectionApi($nip, $token, $typApi);
 $xml = 'twojafaktura.xml';
 $sendInvoice = $objKSeFcommand->sendInvoice($xml);
 
-// Po wykonanym procesie zostanie zwrócony object, na podstawie zwróconych danyhc w bazie apliakcji zostaną zapisane dwie wartości referenceNumber,elementReferenceNumber.
+// Po wykonanym procesie zostanie zwrócony object, na podstawie zwróconych danych w bazie aplikacji zostaną zapisane dwie wartości referenceNumber, elementReferenceNumber.
 // Na podstawie elementReferenceNumber sprawdzany będzie status faktury w repozytorium KSeF
 
 object(stdClass)#5 (5) {
