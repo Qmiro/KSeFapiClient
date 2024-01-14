@@ -18,7 +18,7 @@ W bazie danych będziesz potrzebować następujących tabel
 |-----------------|---------------------------------------------------------------------------|
 | `ksef_api_communication_errors` 	     | 	logowanie błędów procesów zadrzeń  wykonywanych w repozytorium KSeF z wykorzystaniem procesów API                  | 
 | `ksef_api_contracts`	 | 	dane dostępu do API KSeF |
-| `ksef_invoices`	     | 	wysłane / pobrane faktury z repozytorium KSeF                                          |
+| `ksef_invoices`	     | 	numery wysłanych / pobranych faktury z repozytorium KSeF                                          |
 | `ksef_invoice_processing`	     | 	procesy wysyłania faktur do repozytorium KSeF                                          |
 
 Aktualna wersja projektu pozwala na następujące działania:
