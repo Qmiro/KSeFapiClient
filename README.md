@@ -1,4 +1,4 @@
-# QMA - Components KSeFapiClient v.1.0.0
+# QMA - Components KSeF
 
 Komponet rozszerzający aplikację o możliowść przesyłanie faktur do **Krajowego System e-Faktur (KSeF)**. Komponent wspiera faktury ze schema **Fa (2)**.
 
