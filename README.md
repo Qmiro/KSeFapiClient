@@ -26,12 +26,14 @@ Po stronie aplikacji wszystkie dane procesów są przechowywane w bazie danych.
 | `ksef_invoice_processing_history` | historia procesów wysyłanych faktur do repozytorium KSeF |
 | `ksef_invoice_upo` | dane UPO przesłanych faktur do repozytorium KSeF |
 | `ksef_invoices` | numery wysłanych faktur / korekt do repozytorium KSeF |
+| `ksef_invoice_purchases` | numery pobranych faktur / korekt zakupowych z repozytorium KSeF |
 | `ksef_sessions` | zarejestrowane sesje komunikacji z repozytorium KSeF |
 | `view_ksef_api_communication_errors` | widok prezentujący dane błędów komunikacji dla procesów zdarzeń  wykonywanych w repozytorium KSeF z wykorzystaniem API |
 | `view_ksef_invoice_processing` | widok prezentujący dane procesów wysyłania faktur do repozytorium KSeF | 
 | `view_ksef_invoice_processing_history` | widok prezentujący dane historii procesów wysyłanych faktur do repozytorium KSeF |
 | `view_ksef_invoice_upo` | widok prezentujący dane pobranych UPO przesłanych faktur do repozytorium KSeF |
 | `view_ksef_invoices` | widok prezentujący dane numery wysłanych faktur / korekt do repozytorium KSeF |
+| `view_ksef_invoice_purchases` | widok prezentujący dane numery pobranych faktur / korekt zakupowych z repozytorium KSeF |
 | `view_ksef_sessions` | widok prezentujacy dane zarejestrowanych sesje komunikacji z repozytorium KSeF |
 
 Komendy zadań cyklicznych Cron dla procesów KSeF
@@ -40,6 +42,7 @@ Komendy zadań cyklicznych Cron dla procesów KSeF
 | `package:ksef-invoice-send` | komenda wyysłajacą nową fakturę repozytorium KSeF |
 | `package:ksef-invoices-resend` | komenda ponawiająca wyysłkę fakturę repozytorium KSeF (np. niepowodzenie poprzedniej wysyłki) |
 | `package:ksef-invoices-upo` | komenda poberajaca UPO wysłanych faktur / korekt do repozytorium KSeF |
+| `package:ksef-invoices-purchase` | komenda poberajaca faktury / korekty zakupowe  z repozytorium KSeF. Dla komendy dodano parametry do wywołania --contractId numerTwojegoKontraktuZdefiniowanegoWapliakcji --invoicingDateFrom zakresDatPobieranychwpisowOd --invoicingDateTo zakresDatPobieranychwpisowDo |
 
 Czasy uruchamiania poszczególnych zadadań są ustawiane w panelu administracyjnym **QMA - DPA Dedykowana Platforma Aplikacji v.2.x.x**.
 
