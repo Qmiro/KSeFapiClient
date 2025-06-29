@@ -42,7 +42,7 @@ Komendy zadań cyklicznych Cron dla procesów KSeF
 | `package:ksef-invoice-send` | komenda wyysłajacą nową fakturę repozytorium KSeF |
 | `package:ksef-invoices-resend` | komenda ponawiająca wyysłkę fakturę repozytorium KSeF (np. niepowodzenie poprzedniej wysyłki) |
 | `package:ksef-invoices-upo` | komenda poberajaca UPO wysłanych faktur / korekt do repozytorium KSeF |
-| `package:ksef-invoices-purchase` | komenda poberajaca faktury / korekty zakupowe  z repozytorium KSeF. Dla komendy dodano parametry do wywołania --contractId numerTwojegoKontraktuZdefiniowanegoWapliakcji --invoicingDateFrom zakresDatPobieranychwpisowOd --invoicingDateTo zakresDatPobieranychwpisowDo |
+| `package:ksef-invoices-purchase` | komenda poberajaca faktury / korekty zakupowe  z repozytorium KSeF. Dla komendy dodano parametry do wywołania --contractId **numerTwojegoKontraktuZdefiniowanegoWapliakcji** --invoicingDateFrom **zakresDatPobieranychwpisowOd** --invoicingDateTo **zakresDatPobieranychwpisowDo**. Daty są wprowadzane w formacie **RRRR-MM-DD** |
 
 Czasy uruchamiania poszczególnych zadadań są ustawiane w panelu administracyjnym **QMA - DPA Dedykowana Platforma Aplikacji v.2.x.x**.
 
