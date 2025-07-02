@@ -20,6 +20,7 @@ Po stronie aplikacji wszystkie dane procesów są przechowywane w bazie danych.
 | tabela / widok  	       | opis   	                                                           |
 |-----------------|---------------------------------------------------------------------------|
 | `ksef_api_communication_errors` | logowanie błędów komunikacji dla procesów zadrzeń  wykonywanych w repozytorium KSeF z wykorzystaniem API  |
+| `ksef_api_connection_info` | logowanie przebiegu wykonywanych kommend dla akcji z repozytorium KSeF z wykorzystaniem API  |
 | `ksef_api_contracts` | dane dostępu do API KSeF (tzw. kontrakty KSeF) |
 | `ksef_api_worker_job_invoices` | worker zdań wysyłanai faktur / korekt do repozytoium KSeF|
 | `ksef_invoice_processing` | procesy wysyłania faktur do repozytorium KSeF |
@@ -41,7 +42,7 @@ Komendy zadań cyklicznych Cron dla procesów KSeF
 |-----------------|---------------------------------------------------------------------------|
 | `package:ksef-invoice-send` | komenda wyysłajacą nową fakturę repozytorium KSeF |
 | `package:ksef-invoices-resend` | komenda ponawiająca wyysłkę fakturę repozytorium KSeF (np. niepowodzenie poprzedniej wysyłki) |
-| `package:ksef-invoices-upo` | komenda poberajaca UPO wysłanych faktur / korekt do repozytorium KSeF |
+| `package:ksef-invoices-upo` | komenda poberajaca UPO wysłanych faktur / korekt do repozytorium KSeF. Dla komendy dodano opcjonalny parametry do wywołania --contractId **numerTwojegoKontraktuZdefiniowanegoWaplikacji**, jezeli go nie podamy akcja pobierania **UPO** bedzie wykonywana dla wszystkich kontaktóe zdefiniowanych w aplikacji |
 | `package:ksef-invoices-purchase` | komenda poberajaca faktury / korekty zakupowe  z repozytorium KSeF. Dla komendy dodano parametry do wywołania --contractId **numerTwojegoKontraktuZdefiniowanegoWaplikacji** --invoicingDateFrom **zakresDatPobieranychwpisowOd** --invoicingDateTo **zakresDatPobieranychwpisowDo**. Daty są wprowadzane w formacie **RRRR-MM-DD** |
 
 Czasy uruchamiania poszczególnych zadadań są ustawiane w panelu administracyjnym **QMA - DPA Dedykowana Platforma Aplikacji v.2.x.x**.
